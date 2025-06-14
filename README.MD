@@ -22,5 +22,14 @@ We use http methods
 - PATCH => Update an specific information
 - DELETE => Delete something
 
+### HEADERS
+
+We can send metadata here like saying that the response is a JSON
+
 Example
 GET /users => getting information of users in the backend
+
+## Stateful and Stateless
+
+Stateful applications depends on the app keep running to have the info
+Stateless saves in some database
