@@ -11,9 +11,9 @@ const server = http.createServer((req, res) => {
 
   if (method === "POST" && url === "/users") {
     users.push({ id: 1, name: 'John Doe' });
-    return res.end('Create a user');
+    return res.writeHead(201).end();
   }
-  return res.end('Hello World!');
+  return res.writeHead(404).end();
 })
 
 server.listen(3333)
