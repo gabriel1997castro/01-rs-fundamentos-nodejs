@@ -41,3 +41,15 @@ GET /users => getting information of users in the backend
 
 Stateful applications depends on the app keep running to have the info
 Stateless saves in some database
+
+## 3 ways to send info
+
+- Query parameters:
+  - URL stateful - we could send a url from a list of users filtered and sorted to another person
+  - http://localhost:3333/users?userId=1
+- Route parameters:
+  - GET http://localhost:3333/users/1 - get user 1
+  - DELETE http://localhost:3333/users/1 - delete user 1
+  - 1 is a route parameter and it should identify a resource.
+- Request body:
+  - We can use to send form information (HTTPs)
